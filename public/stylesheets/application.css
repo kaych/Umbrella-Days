@@ -17,6 +17,11 @@ legend {
   color: #FFFFFF;
 }
 
+table th, td {
+  text-align: left;
+  vertical-align: top;
+}
+
 .header {
   text-align: center;
   margin-top: 150px;
@@ -39,11 +44,16 @@ legend {
   font-size: 18px;
 }
 
+.sweet-alert h2 {
+  line-height: 40px;
+  padding-bottom: 15px;
+}
+
 #city-form, #city-results {
   display: none;
 }
 
-#btn-start {
+#btn-start, #btn-geo-location {
   margin-top: 20px;
   font-size: 25px;
 }
@@ -51,4 +61,8 @@ legend {
 #btn-submit-city {
   margin-top: -10px;
   margin-left: 515px;
+}
+
+#four-day td {
+  text-align: left;
 }
