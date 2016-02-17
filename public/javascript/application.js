@@ -22,9 +22,10 @@ $(function() {
         var forecastToday = city.forecast.txt_forecast.forecastday[0];
         var forecastOther = city.forecast.txt_forecast.forecastday;
         swal({
-          title: "Local forecast (@ " + city.forecast.txt_forecast.date + ")",
+          title: "Local Forecast (@ " + city.forecast.txt_forecast.date + ")",
           imageUrl: forecastToday.icon_url,
           width: 600,
+          padding: 35,
           html: "<em>" + forecastToday.fcttext_metric + "</em><br><br>" + "<table><tr><th>" + forecastOther[1].title + ": </th> <td>" + forecastOther[1].fcttext_metric + "</td></tr>" + "<tr><th>" + forecastOther[2].title + ": </th><td>" + forecastOther[2].fcttext_metric + "</td></tr>" + "<tr><th>" + forecastOther[4].title + ": </th><td>" + forecastOther[4].fcttext_metric + "</td> <tr><th>" + forecastOther[6].title + ": </th><td>" + forecastOther[6].fcttext_metric + "</td></tr></table>"
         });
       }
@@ -69,7 +70,7 @@ $(function() {
           swal({
             title: "Current condition of " + cityName + " @ " + city.forecast.txt_forecast.date,
             imageUrl: forecastToday.icon_url,
-            html: "<b>Current Forecast: </b>" + forecastToday.fcttext_metric + "<br> <b> Tomorrow: </b>" + forecastTmr.fcttext_metric
+            html: "<b>Current Forecast: </b>" + forecastToday.fcttext_metric + "<br><br> <b>Tomorrow: </b>" + forecastTmr.fcttext_metric
           });
         }
       });

@@ -50,6 +50,25 @@ table th, td {
   padding-bottom: 15px;
 }
 
+.sweet-alert p {
+  padding-bottom: 3px;
+}
+
+.sweet-alert hr {
+  height: 0px;
+  margin-bottom: 10px;
+}
+
+div.sweet-alert.show-sweet-alert.visible {
+  padding: 35px;
+  margin-bottom: 20px;
+}
+
+div.icon.custom {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
 #city-form, #city-results {
   display: none;
 }
